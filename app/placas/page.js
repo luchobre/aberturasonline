@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardBody, CardFooter, Image, Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Link, Spinner } from "@nextui-org/react";
 import NavbarDoor from '../components/Navbar/NavbarDoor';
+import Footer from '../components/Footer/Footer';
 
 const CardDoor = () => {
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar si el modal está abierto
@@ -91,7 +92,7 @@ const CardDoor = () => {
             <Button color="danger" variant="light" onClick={handleCloseModal}>
               Cerrar
             </Button>
-            <Link href = {`https://wa.me/5491138325070?text=Hola!%20estoy%20interesado%20en%20tu%20producto%20${selectedItem?.brand}%20${selectedItem?.mark}%20${selectedItem?.width}}`} isExternal>
+            <Link href = {`https://wa.me/5491138325070?text=Hola!%20estoy%20interesado%20en%20tu%20producto%20${selectedItem?.brand}%20${selectedItem?.mark}%20${selectedItem?.width}`} isExternal>
               <Button color="primary">
                 Consultar por WhatsApp
               </Button>
@@ -99,6 +100,7 @@ const CardDoor = () => {
           </ModalFooter>
         </ModalContent>
       </Modal>
+      <Footer />
     </>
   );
 };

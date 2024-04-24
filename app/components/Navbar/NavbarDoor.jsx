@@ -31,19 +31,23 @@ export default function NavbarDoor() {
     },
     {
       route: "Nosotros",
-      ref: "/",
+      ref: "/nosotros",
     },
     {
-      route: "Productos",
+      route: "Puertas de exterior",
       ref: "/puertas",
     },
     {
-      route: "Contacto",
-      ref: "/",
+      route: "Puertas de interior",
+      ref: "/placas",
     },
     {
-      route: "Log Out",
-      ref: "/",
+      route: "Ventanas",
+      ref: "/ventanas",
+    },
+    {
+      route: "Contacto",
+      ref: "/contacto",
     },
   ];
 
@@ -70,7 +74,7 @@ export default function NavbarDoor() {
           </Link>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/nosotros">
             Nosotros
           </Link>
         </NavbarItem>
@@ -90,7 +94,7 @@ export default function NavbarDoor() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/contacto">
             Contacto
           </Link>
         </NavbarItem>
@@ -112,9 +116,9 @@ export default function NavbarDoor() {
               className="w-full"
               color={
                 index === 2
-                  ? "warning"
+                  ? "foreground"
                   : index === menuItems.length - 1
-                  ? "danger"
+                  ? "foreground"
                   : "foreground"
               }
               href={item.ref}

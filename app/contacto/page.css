@@ -1,0 +1,17 @@
+.containerTextArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+    height: 80vh;
+}
+.containerTextArea h1 {
+    font-size: 30px;
+    text-align: center;
+}
+.textArea {
+    /* border: 2px solid white; */
+    min-width: 300px;
+    margin: 10%;
+}

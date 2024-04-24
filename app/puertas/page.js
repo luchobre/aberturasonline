@@ -10,10 +10,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay'
 import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
 import './swiper.css'; 
+import Footer from '../components/Footer/Footer';
 
 const CardDoor = () => {
-  const [isOpen, setIsOpen] = useState(false); // Estado para controlar si el modal está abierto
-  const [selectedItem, setSelectedItem] = useState(null); // Estado para almacenar el elemento seleccionado
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [offerProducts, setOfferProducts] = useState([])
@@ -40,13 +41,13 @@ const CardDoor = () => {
   }, []);
 
   const handleCardClick = (item) => {
-    setIsOpen(true); // Abrir el modal al hacer clic en una tarjeta
-    setSelectedItem(item); // Almacenar el elemento seleccionado
+    setIsOpen(true);
+    setSelectedItem(item);
   };
 
   const handleCloseModal = () => {
-    setIsOpen(false); // Cerrar el modal
-    setSelectedItem(null); // Reiniciar el elemento seleccionado
+    setIsOpen(false); 
+    setSelectedItem(null); 
   };
 
  
@@ -101,7 +102,7 @@ const CardDoor = () => {
             <Button color="danger" variant="light" onClick={handleCloseModal}>
               Cerrar
             </Button>
-            <Link href = {`https://wa.me/5491138325070?text=Hola!%20estoy%20interesado%20en%20tu%20producto%20${selectedItem?.brand}%20${selectedItem?.model}%20${selectedItem?.width}}`} isExternal>
+            <Link href = {`https://wa.me/5491138325070?text=Hola!%20estoy%20interesado%20en%20tu%20producto%20${selectedItem?.brand}%20${selectedItem?.model}%20${selectedItem?.width}`} isExternal>
               <Button color="primary">
                 Consultar por WhatsApp
               </Button>
@@ -109,6 +110,7 @@ const CardDoor = () => {
           </ModalFooter>
         </ModalContent>
       </Modal>
+      <Footer />
     </>
   );
 };
