@@ -4,7 +4,7 @@ import { Card, CardBody, CardFooter, Image, Modal, ModalContent, ModalHeader, Mo
 import NavbarDoor from '../components/Navbar/NavbarDoor';
 import Footer from '../components/Footer/Footer';
 
-const CardDoor = () => {
+const Placas = () => {
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar si el modal está abierto
   const [selectedItem, setSelectedItem] = useState(null); // Estado para almacenar el elemento seleccionado
   const [products, setProducts] = useState([]);
@@ -105,5 +105,5 @@ const CardDoor = () => {
   );
 };
 
-export default CardDoor;
+export default Placas;
 

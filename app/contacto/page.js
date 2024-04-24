@@ -5,7 +5,7 @@ import NavbarDoor from "../components/Navbar/NavbarDoor";
 import { Textarea, Link, Button } from "@nextui-org/react";
 import "./page.css";
 
-const page = () => {
+const Contact = () => {
     const [message, setMessage] = useState('')
 
     const handleMessage =(e)=> {
@@ -35,4 +35,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;

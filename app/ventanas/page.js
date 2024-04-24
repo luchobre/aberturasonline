@@ -32,7 +32,7 @@ import 'swiper/css/autoplay'
 import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
 import Footer from "../components/Footer/Footer";
 
-const CardDoor = () => {
+const Ventanas = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -257,4 +257,4 @@ const CardDoor = () => {
   );
 };
 
-export default CardDoor;
+export default Ventanas;

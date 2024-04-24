@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
               <img
                 src="https://i.imgur.com/AvSCW5B.png"
                 className="h-24"
-                alt="Flowbite Logo"
+                alt="Aberturas Logo"
               />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Aberturas Online

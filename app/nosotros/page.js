@@ -6,7 +6,7 @@ import nosotros from "../../public/images/nosotros.jpg";
 import nosotros1 from "../../public/images/nosotros1.jpg";
 import nosotros2 from "../../public/images/nosotros2.jpg";
 
-const page = () => {
+const AboutUs = () => {
   return (
     <>
       <NavbarDoor />
@@ -98,5 +98,5 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutUs;
 

@@ -12,7 +12,7 @@ import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
 import './swiper.css'; 
 import Footer from '../components/Footer/Footer';
 
-const CardDoor = () => {
+const Chapa = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [products, setProducts] = useState([]);
@@ -115,5 +115,5 @@ const CardDoor = () => {
   );
 };
 
-export default CardDoor;
+export default Chapa;
 
